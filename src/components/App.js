@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route,Routes } from "react-router-dom";
 import NavBar from "./NavBar";
 import Home from "./Home";
 import Actors from "./Actors";
@@ -7,24 +7,21 @@ import Directors from "./Directors";
 import Movies from "./Movies";
 
 function App() {
-  return <div>
-    <NavBar >
-      <Switch>
-        <Route exact path="/" >
-          {Home}
-        </Route>
-        <Route exact path="/actors">
-         {Actors}
-        </Route>
-        <Route exact path="/directors">
-           {Directors}
-        </Route>
-        <Route exact path="/movies"></Route>
-        {Movies}
-      </Switch>
-
-    </NavBar>
-  </div>;
+  return( <div>   
+    <NavBar />
+      <Routes>
+        <Route exact path="/"element={<Home/>} />     
+        
+        <Route exact path="/actors" element={<Actors/>} />
+        
+        
+        <Route exact path="/directors" element={<Directors/>}/>
+           
+        
+        <Route exact path="/movies" element={<Movies/>} />
+        </Routes>  
+  </div>
+  )
 }
 
 export default App;
