@@ -9,16 +9,16 @@ to="/"
   Home
     </NavLink>
 
-    <NavLink to="/actors">
-  Actors
-    </NavLink>
-
     <NavLink to="/movies">
-   Movies
+Movies
     </NavLink>
 
     <NavLink to="/directors">
-     Directors
+  Directors
+    </NavLink>
+
+    <NavLink to="/actors">
+    Actors
     </NavLink>
   </div>
   )

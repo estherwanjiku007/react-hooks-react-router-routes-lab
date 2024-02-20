@@ -7,9 +7,10 @@ function Movies() {
       <h1>{movie.title}</h1>
       <h1>{movie.time}</h1>
       {movie.genres.map((myMovie,index)=>(
-        <li key={index}>
+        <ul key={index}><li >
           {myMovie}
-        </li>
+         </li>
+        </ul>
       ))}
       </div>
   ))
