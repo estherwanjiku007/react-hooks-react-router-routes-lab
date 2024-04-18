@@ -7,7 +7,7 @@ import Directors from "./Directors";
 import Movies from "./Movies";
 
 function App() {
-  return( <div>   
+  return( <div style={{background:"aqua"}}>   
     <NavBar />
       <Routes>
         <Route exact path="/"element={<Home/>} />     

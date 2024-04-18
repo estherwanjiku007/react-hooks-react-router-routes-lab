@@ -3,7 +3,7 @@ import { directors } from "../data";
 
 function Directors() {
   const allDirectors=directors.map((director,index)=>(
-    <div key={index}>
+    <div key={index}style={{margin:10}}>
       <h1>{director.name}</h1>
     {director.movies.map((movie,index)=>(
       <li key={index}>{movie}</li>

@@ -3,7 +3,7 @@ import { movies } from "../data";
 
 function Movies() {
   const myMovies=movies.map((movie,index)=>(
-    <div key={index}>
+    <div key={index} style={{background:"Aqua"}}>
       <h1>{movie.title}</h1>
       <h1>{movie.time}</h1>
       {movie.genres.map((myMovie,index)=>(
